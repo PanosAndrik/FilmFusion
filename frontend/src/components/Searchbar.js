@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Searchbar.css'
+import '../styles/SearchBar.css'
 import PropTypes from 'prop-types';
 
 function Searchbar({ onSearch }) {
