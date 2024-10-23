@@ -9,7 +9,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       // Send login request to the backend
-      const response = await axios.post("http://localhost:3004/user/login", { email, password });
+      const response = await axios.post(`${API_URL}/user/login`, { email, password });
 
       // Get the token from the response data
       const token = response.data.token;
