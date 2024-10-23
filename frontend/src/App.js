@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const fetchDefaultMovies = async () => {
       try {
-        const response = await axios.get(`http://www.omdbapi.com/?s=horror&apikey=${API_KEY}`);
+        const response = await axios.get(`https://www.omdbapi.com/?s=horror&apikey=${API_KEY}`);
         const data = response.data;
         if (data.Search) {
           setDefaultMovies(data.Search.slice(0, 10));  
@@ -40,7 +40,7 @@ function App() {
   const handleSearch = async (query) => {
     setIsSearchActive(true);
     try {
-      const response = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`);
+      const response = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`);
       const data = await response.json();
       if (data.Search) {
         setSearchResults(data.Search);

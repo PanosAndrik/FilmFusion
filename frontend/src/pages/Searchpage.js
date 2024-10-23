@@ -12,7 +12,7 @@ function SearchPage() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
+      const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
       if (!response.ok) {
         throw new Error('Failed to fetch movies');
       }
