@@ -4,7 +4,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const verifyToken = require("./middleware/auth")
-const port = 3004;
+const port = 10000;
 
 const connection = require('./connection.js');
 
