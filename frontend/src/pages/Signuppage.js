@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../styles/Signuppage.css";
+import { API_URL } from "../constants";
 
 function SignupPage() {
   const [email, setEmail] = useState("");
