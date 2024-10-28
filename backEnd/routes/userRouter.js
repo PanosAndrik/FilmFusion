@@ -10,7 +10,7 @@ const {getAllUsers, createUser, loginUser, updateUsers, deleteUser} = require(".
 //for users
 
 router.get("/", getAllUsers);
-router.post("/create", createUser);
+router.post("/signup", createUser);
 router.post("/login", loginUser);
 router.put("/update/:id", updateUsers);
 router.delete("/delete/:id", deleteUser);
