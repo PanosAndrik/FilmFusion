@@ -57,7 +57,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        {/* <Route path = "/" element={<></>} /> */}
+        <Route path = "/" element={<></>} />
         <Route path = "/login" element={<LoginPage/>} />
         <Route path = "/signup" element={<SignupPage/>} />
         </Routes>
